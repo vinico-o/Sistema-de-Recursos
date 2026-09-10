@@ -293,29 +293,27 @@ RG05 - O acesso ao sistema deve restrito a usuários autenticados por meio de lo
 
 #### 3.1.4 Gestão de Finanças
 
-**RF16 – Gerar relatório de despesas:** o sistema deve gerar relatório de despesas exibindo o total gasto por período, com representação gráfica (barras ou pizza) e listagem detalhada dos lançamentos. (E)
+**RF16 – Gerar relatório de despesas:** o sistema deve gerar relatório de despesas exibindo o total gasto com representação gráfica. (E)
 
-TODO: acho que eh bom especificar qual grafico utilizar para cada tipo de situacao: exemplo, pizza para mostrar as categorias de produto, linhas para mostrar a evolução do saldo
+- **RF16.1 – Filtrar relatório de despesas por período:** o sistema deve gerar gráfico de linha, possibilitando definir intervalo de datas para o relatório, exibindo apenas lançamentos dentro do período informado. (E)
 
-- **RF16.1 – Filtrar relatório de despesas por período:** o sistema deve permitir definir intervalo de datas para o relatório, exibindo apenas lançamentos dentro do período informado. (E)
-
-- **RF16.2 – Filtrar relatório de despesas por categoria:** o sistema deve permitir selecionar uma ou mais categorias para filtrar o relatório, exibindo apenas os lançamentos das categorias escolhidas. (E)
+- **RF16.2 – Filtrar relatório de despesas por categoria:** o sistema deve gerar gráfico de pizza, permitindo selecionar uma ou mais categorias para filtrar o relatório de despesas, exibindo apenas os lançamentos das categorias selecionadas. (E)
 
 - **RF16.3 - Restrição de geração de relatório:** somente o Administrador e Vendedor podem gerar relatórios de despesa. (O)
 
-**RF17 – Gerar relatório de receitas:** o sistema deve gerar relatório de receitas exibindo o total recebido por categoria e por período, com representação gráfica (barras ou pizza) e listagem detalhada dos lançamentos. (E)
+**RF17 – Gerar relatório de receitas:** o sistema deve gerar relatório de receitas exibindo o total recebido com representação gráfica. (E)
 
-- **RF17.1 – Filtrar relatório de receitas por período:** o sistema deve permitir definir intervalo de datas para o relatório, exibindo apenas lançamentos dentro do período informado. (E)
+- **RF17.1 – Filtrar relatório de receitas por período:** o sistema deve gerar gráfico de linha, possibilitando definir intervalo de datas para o relatório, exibindo apenas lançamentos dentro do período informado. (E)
 
-- **RF17.2 – Filtrar relatório de receitas por categoria:** o sistema deve permitir selecionar uma ou mais categorias para filtrar o relatório de receitas, exibindo apenas os lançamentos das categorias selecionadas. (E)
+- **RF17.2 – Filtrar relatório de receitas por categoria:**o sistema deve gerar gráfico de pizza, permitindo selecionar uma ou mais categorias para filtrar o relatório de receitas, exibindo apenas os lançamentos das categorias selecionadas. (E)
 
-- **RF17.3 - Restrição de geração de relatório:** o sistema deve permitir somente o Administrador e Vendedor gerar relatórios de receita. (O)
+- **RF17.3 - Restrição de geração de relatório:** somente o Administrador e Vendedor podem gerar relatórios de receita. (O)
 
 **RF18 – Gerar relatório financeiro geral:** o sistema deve gerar relatório consolidado com total de receitas, total de despesas, saldo resultante e representação gráfica da evolução do saldo ao longo de um período. (E)
 
-- **RF18.1 – Filtrar relatório financeiro por período:** o sistema deve permitir definir intervalo de datas, calculando receitas, despesas e saldo apenas dentro do período selecionado. (E)
+- **RF18.1 – Filtrar relatório financeiro por período:** o sistema deve gerar gráfico de linha, possibilitando definir intervalo de datas, calculando receitas, despesas e saldo apenas dentro do período selecionado. (E)
 
-- **RF18.2 - Restrição de geração de relatório:** o sistema deve permitir somente o Administrador e Vendedor gerar relatórios de finanças. (O)
+- **RF18.2 - Restrição de geração de relatório:** somente o Administrador e Vendedor podem gerar relatórios de finanças. (O)
 
 **RF19 – Calcular saldo financeiro:** o sistema deve calcular automaticamente o saldo financeiro após cada operação que envolva receita ou despesa, sem necessidade de intervenção do usuário. (O)
 
