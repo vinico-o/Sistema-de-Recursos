@@ -1,4 +1,4 @@
-## 1. Introdução
+## 1\. Introdução
 
 ### 1.1 Propósito do Documento de Requisitos
 
@@ -8,9 +8,9 @@ Além disso, o documento será utilizado como referência no planejamento, imple
 
 O público-alvo deste documento envolve:
 
-- Gerentes de Software do sistema;
-- Analistas e Projetistas;
-- Grupo de SQA;
+- Gerentes de Software do sistema;  
+- Analistas e Projetistas;  
+- Grupo de SQA;  
 - Desenvolvedores responsáveis pela implementação do sistema;
 
 ### 1.2 Escopo do Produto
@@ -19,8 +19,8 @@ O sistema tem como objetivo auxiliar na organização e no controle do estoque, 
 
 O sistema será utilizado para:
 
-- Cadastrar produtos no catálogo do estoque;
-- Controlar compra e vendas dos produtos;
+- Cadastrar produtos no catálogo do estoque;  
+- Controlar compra e vendas dos produtos;  
 - Acompanhar o desempenho financeiro do comércio;
 
 O Sistema de Recursos é destinado principalmente a pequenos e médios estabelecimentos comerciais do setor varejista, oferecendo recursos para o gerenciamento integrado de estoque, compras, vendas e operações financeiras. O sistema busca atender negócios que necessitam de uma ferramenta de gestão simplificada, capaz de centralizar suas operações e fornecer informações para auxiliar no controle e na tomada de decisões.
@@ -32,7 +32,7 @@ O sistema não contempla APIs de pagamentos, de emissão de Nota Fiscal ou de au
 As principais definições, abreviações e acrônimos utilizados neste documento serão listados a seguir.
 
 | Termo / Definição |  |
-| --- | --- |
+| :---- | :---- |
 | **RF** | Requisito Funcional. Descreve uma funcionalidade ou comportamento que o sistema deve oferecer. |
 | **RNF** | Requisito Não Funcional. Descreve uma característica de qualidade, restrição ou comportamento esperado do sistema. |
 | **RG** | Restrição Geral. Define limitações ou condições que devem ser obrigatoriamente respeitadas pelo sistema. |
@@ -53,7 +53,7 @@ As principais definições, abreviações e acrônimos utilizados neste document
 | **ADM** | Administrador.Usuário com acesso total ao sistema. |
 | **EST** | Estoquista. Usuário com acesso às funcinalidades de estoque. |
 | **VEND** | Vendedor. Usuário com acesso às funcionalidades de vendas e financeiras. |
-| **CRUD** | Operações com dados. C - create (criar); R - read (leitura); U - update (atualizar); D - delete (deletar). |
+| **CRUD** | Operações com dados. C \- create (criar); R \- read (leitura); U \- update (atualizar); D \- delete (deletar). |
 
 ### 1.4 Referências
 
@@ -63,14 +63,14 @@ Não usamos referências.
 
 Esse documento está organizado em seções, cada uma responsável por descrever partes específicas do sistema proposto. São elas:
 
-- Seção 2: Apresenta a descrição geral do sistema, indicando os aspectos principais, como perspectivas, funcionalidades, restrições, suposições e dependências do produto. Com isso é possível ter uma visão mais específica do objetivo da aplicação.
-- Seção 3: Descreve com maior detalhamento os requisitos do sistema, de como ele se comunicará com o mundo exterior, e lista as funções e recursos específicos. Com isso será possível ter uma visão geral e entender com mais clareza o funcionamento do sistema.
-- Seção 4: Acrescenta ao documento informações complementares que auxiliam o entendimento dos requisitos do sistema e do funcionamento geral do sistema.
+- Seção 2: Apresenta a descrição geral do sistema, indicando os aspectos principais, como perspectivas, funcionalidades, restrições, suposições e dependências do produto. Com isso é possível ter uma visão mais específica do objetivo da aplicação.  
+- Seção 3: Descreve com maior detalhamento os requisitos do sistema, de como ele se comunicará com o mundo exterior, e lista as funções e recursos específicos. Com isso será possível ter uma visão geral e entender com mais clareza o funcionamento do sistema.  
+- Seção 4: Acrescenta ao documento informações complementares que auxiliam o entendimento dos requisitos do sistema e do funcionamento geral do sistema.  
 - Seção 5: Parte do documento que lista todas as seções presentes no documento, além de uma lista alfabética com os termos-chave, conceitos e siglas utilizados seguido da página em que aparecem.
 
-## 2. Descrição Geral
+## 2\. Descrição Geral
 
-O Sistema de Recursos - Gestão de Estoque, Vendas e Financeiro tem como objetivo auxiliar empresas no gerenciamento de seus produtos, vendas e operações financeiras. O sistema centralizará essas informações, permitindo o controle do estoque, o registro de vendas e o acompanhamento das movimentações financeiras.
+O Sistema de Recursos \- Gestão de Estoque, Vendas e Financeiro tem como objetivo auxiliar empresas no gerenciamento de seus produtos, vendas e operações financeiras. O sistema centraliza essas informações, permitindo o controle do estoque, o registro de vendas e o acompanhamento das movimentações financeiras.
 
 ### 2.1 Perspectiva do Produto
 
@@ -78,7 +78,7 @@ O Sistema de Recursos será desenvolvido como uma aplicação independente. Ele 
 
 O sistema será composto por módulos que compartilham informações entre si, sendo eles: Estoque, Vendas e Financeiro. Dessa forma, operações em um módulo poderá produzir alterações nos demais módulos.
 
-O usuário interagirá com o sistema por meio de uma interface gráfica, desse modo, ele poderá executar as operações de cada um dos módulos.
+O usuário interage com o sistema por meio de uma interface gráfica, desse modo, ele poderá executar as operações de cada um dos módulos.
 
 ### 2.2 Funcionalidade do Produto
 
@@ -90,9 +90,9 @@ Responsável pelo controle dos produtos armazenados pela empresa.
 
 Principais funcionalidades:
 
-- Cadastrar, alterar, consultar e remover produtos do catálogo;
-- Cadastrar categorias de produtos;
-- Consultar produtos disponíveis no catálogo;
+- Cadastrar, alterar, consultar e remover produtos do catálogo;  
+- Cadastrar categorias de produtos;  
+- Consultar produtos disponíveis no catálogo;  
 - Consultar movimentações do estoque.
 
 #### 2.2.2 Módulo de Vendas
@@ -101,7 +101,7 @@ Responsável pelo registro e acompanhamento das vendas realizadas.
 
 Principais funcionalidades:
 
-- Registrar uma nova venda;
+- Registrar uma nova venda;  
 - Consultar histórico de vendas.
 
 #### 2.2.3 Módulo Financeiro
@@ -110,59 +110,59 @@ Responsável pelo controle das movimentações financeiras da empresa.
 
 Principais funcionalidades:
 
-- registrar receitas e despesas;
-- Consultar movimentações financeiras;
-- Controlar pagamentos;
-- Consultar saldo;
+- Registrar receitas e despesas;  
+- Consultar movimentações financeiras;  
+- Controlar pagamentos;  
+- Consultar saldo;  
 - Gerar relatórios financeiros.
 
 ### 2.3 Características do Usuário
 
-O sistema possuirá três níveis diferentes de usuários, cada um deles com acessos à diferentes funcionalidades. São eles:
+O sistema possui três níveis diferentes de usuários, cada um deles com acessos à diferentes funcionalidades. São eles:
 
 Administrador
 
-- Acesso à todas as funcionalidades do sistema.
+- Acesso à todas as funcionalidades do sistema.  
 - Gestão de usuários: Cadastro e exclusão.
 
 Estoquista
 
-- Gestão de Estoque: CRUD
+- Gestão de Estoque: CRUD  
 - Visualizar Saldo
 
 Vendedor
 
-- Compra de Produtos
-- Visualizar Relatório Financeiro
-- Venda de Produtos
+- Compra de Produtos  
+- Visualizar Relatório Financeiro  
+- Venda de Produtos  
 - Visualizar Saldo
 
 Os usuários deverão possuir conhecimentos básicos de informática e estar familiarizados com as operações relacionadas à estoque, vendas e gestão financeira.
 
 ### 2.4 Restrições Gerais
 
-RG01 - O sistema deve ser desenvolvido em linguagem Java.
+RG01 \- O sistema deve ser desenvolvido em linguagem Java.
 
-RG02 - Todos os registros e informações do sistema devem ser armazenados de maneira permanente em um banco de dados relacional, a fim de garantir a existência e a integridade dos dados mesmo fora da execução do sistema.
+RG02 \- Todos os registros e informações do sistema devem ser armazenados de maneira permanente em um banco de dados relacional, a fim de garantir a existência e a integridade dos dados mesmo fora da execução do sistema.
 
-RG03 - O sistema deve ser executável em qualquer sistema operacional compatível com a JVM (Java Virtual Machine), incluindo Windows e Linux.
+RG03 \- O sistema deve ser executável em qualquer sistema operacional compatível com a JVM (Java Virtual Machine), incluindo Windows e Linux.
 
-RG04 - O sistema operará em modo de usuário único por sessão, sem suporte a acesso simultâneo de múltiplos usuários em uma única sessão.
+RG04 \- O sistema operará em modo de usuário único por sessão, sem suporte a acesso simultâneo de múltiplos usuários em uma única sessão.
 
-RG05 - O acesso ao sistema deve restrito a usuários autenticados por meio de login e senha. Nenhuma funcionalidade do sistema pode ser acessada sem autenticação prévia.
+RG05 \- O acesso ao sistema deve ser restrito a usuários autenticados por meio de login e senha. Nenhuma funcionalidade do sistema pode ser acessada sem autenticação prévia.
 
 ### 2.5 Suposições e Dependências
 
 #### 2.5.1 Suposições
 
-- Assume-se que os usuários do sistema possuem conhecimento básico de informática para operar o sistema.
-- Assume-se que o computador onde o sistema será executado possui Java instalado e configurado corretamente.
+- Assume-se que os usuários do sistema possuem conhecimento básico de informática para operar o sistema.  
+- Assume-se que o computador onde o sistema será executado possui Java instalado e configurado corretamente.  
 - Assume-se que o sistema seja utilizado para apenas um comércio.
 
 #### 2.5.2 Dependências
 
-- O sistema depende da disponibilidade de um ambiente computacional capaz de executar aplicações desenvolvidas na linguagem Java, sendo necessários sistemas operacionais que suportam Máquina Virtual Java (JVM), como Linux ou Windows.
-- O módulo de Vendas depende do módulo de Estoque estar corretamente configurado (produtos cadastrados) antes de registrar qualquer venda.
+- O sistema depende da disponibilidade de um ambiente computacional capaz de executar aplicações desenvolvidas na linguagem Java, sendo necessários sistemas operacionais que suportam Máquina Virtual Java (JVM), como Linux ou Windows.  
+- O módulo de Vendas depende do módulo de Estoque estar corretamente configurado (produtos cadastrados) antes de registrar qualquer venda.  
 - O módulo Financeiro depende dos módulos de Vendas e Estoque para gerar automaticamente lançamentos (contas a receber, custos).
 
 ## 3 Requisitos Específicos
@@ -175,32 +175,31 @@ RG05 - O acesso ao sistema deve restrito a usuários autenticados por meio de lo
 
 **RF02 – Autenticar usuário:** o sistema deve permitir que o usuário informe o nome de usuário e senha para acessar o sistema, bloqueando qualquer funcionalidade enquanto a autenticação não for concluída com sucesso. (E)
 
-- **RF02.1 – Restringir acesso por nível de permissão:** o sistema deve exibir apenas as funcionalidades compatíveis com o nível do usuário autenticado (ADM, EST ou VEND). (O)
-
+- **RF02.1 – Restringir acesso por nível de permissão:** o sistema deve exibir apenas as funcionalidades compatíveis com o nível do usuário autenticado (ADM, EST ou VEND). (O)  
+    
 - **RF02.2 – Exibir mensagem de erro de autenticação:** o sistema deve exibir mensagem de erro informando que o login ou a senha estão incorretos, caso as informações de login não sejam encontradas. (E)
 
 **RF03 – Encerrar sessão:** o sistema deve permitir que o usuário autenticado encerre sua sessão a qualquer momento, retornando à tela de login. (E)
 
-- **RF03.1 – Confirmar encerramento de sessão:** o sistema deve exibir mensagem de confirmação antes de encerrar a sessão. (E)
-
+- **RF03.1 – Confirmar encerramento de sessão:** o sistema deve exibir mensagem de confirmação antes de encerrar a sessão. (E)  
+    
 - **RF03.2 – Invalidar dados da sessão encerrada:** o sistema deve impedir qualquer acesso às funcionalidades protegidas sem nova autenticação. (O)
 
 #### 3.1.2 Gestão de Usuários
 
 **RF04 – Cadastrar usuário:** o sistema deve permitir o cadastro de novos usuários. (E)
 
-- **RF04.1 – Restrição cadastro de usuário:** somente o Administrador pode cadastrar usuários. (O)
-
-- **RF04.2 – Validar unicidade de nome de usuário:** no momento do cadastro, o sistema deve verificar se o nome de usuário já existe. (O)
-
+- **RF04.1 – Restrição cadastro de usuário:** somente o Administrador pode cadastrar usuários. (O)  
+    
+- **RF04.2 – Validar unicidade de nome de usuário:** no momento do cadastro, o sistema deve verificar se o nome de usuário já existe. (O)  
+    
   - **RF04.2.1 – Exibir mensagem de erro de nome duplicado:** o sistema deve apresentar mensagem de erro caso o nome de usuário já exista. (E)
 
-- **RF04.3 – Informações de cadastro:** o sistema deve conter as seguintes informações de usuário: (E)
 
-  - Nome de usuário;
-
-  - Senha;
-
+- **RF04.3 – Informações de cadastro:** o sistema deve conter as seguintes informações de usuário: (E)  
+    
+  - Nome de usuário;  
+  - Senha;  
   - Nível de usuário;
 
 **RF05 – Editar informações de usuário:** o sistema deve permitir editar as informações de um usuário já cadastrado. (E)
@@ -209,9 +208,9 @@ RG05 - O acesso ao sistema deve restrito a usuários autenticados por meio de lo
 
 **RF06 – Excluir usuário:** o sistema deve permitir excluir o registro de um usuário após confirmação da operação. (E)
 
-- **RF06.1 – Restrição de exclusão de usuário:** somente o Administrador pode excluir usuários. (O)
-
-- **RF06.2 – Impedir autoexclusão:** o sistema deve bloquear a tentativa de um usuário excluir sua própria conta enquanto estiver autenticado. (O)
+- **RF06.1 – Restrição de exclusão de usuário:** somente o Administrador pode excluir usuários. (O)  
+    
+- **RF06.2 – Impedir auto exclusão:** o sistema deve bloquear a tentativa de um usuário excluir sua própria conta enquanto estiver autenticado. (O)
 
 **RF07 – Listar usuários:** o sistema deve permitir a visualização de todos os usuários registrados com suas informações básicas em formato de tabela. (E)
 
@@ -221,101 +220,101 @@ RG05 - O acesso ao sistema deve restrito a usuários autenticados por meio de lo
 
 #### 3.1.3 Gestão de Estoque
 
-**RF09 - Cadastrar produtos:** o sistema deve permitir o cadastro de produto no catálogo. (E)
+**RF09 \- Cadastrar produtos:** o sistema deve permitir o cadastro de produtos no catálogo. (E)
 
-- **RF09.1 – Validar unicidade do produto:** o sistema deve verificar se já existe um produto com o mesmo cadastro. (O)
-
+- **RF09.1 – Validar unicidade do produto:** o sistema deve verificar se já existe um produto com o mesmo cadastro. (O)  
+    
   - **RF09.1.1 – Exibir mensagem de erro de produto duplicado:** o sistema deve apresentar mensagem de erro se o produto já estiver cadastrado. (E)
 
-- **RF09.2 – Informações de cadastro:** o sistema deve conter as seguintes informações de produto: (E)
 
-  - Nome do produto;
-
-  - Código do produto;
-
-  - Preço do produto;
-
-  - Quantidade;
-
-  - Unidade de medida;
-
-  - Categoria;
-
+- **RF09.2 – Informações de cadastro:** o sistema deve conter as seguintes informações de produto: (E)  
+    
+  - Nome do produto;  
+  - Código do produto;  
+  - Preço do produto;  
+  - Quantidade;  
+  - Unidade de medida;  
+  - Categoria;  
   - Quantidade mínima de estoque;
 
-- **RF09.2.1 - Unidades de medida:** as unidades de medida dos produtos podem ser: UN (unidade), CX (caixa), KG (quilograma), PCT (pacote) ou L (litro). (E) 
 
-- **RF09.2.2 - Cadastro de Categorias:** O sistema deve permitir o cadastro de categorias. (E)
+- **RF09.2.1 \- Unidades de medida:** as unidades de medida dos produtos podem ser: UN (unidade), CX (caixa), KG (quilograma), PCT (pacote) ou L (litro). (E)  
+    
+- **RF09.2.2 \- Cadastro de Categorias:** O sistema deve permitir o cadastro de categorias. (E)  
+    
+  - **RF09.2.2.1 \- Exibir Categorias durante cadastro de Produto:** o sistema deve exibir as categorias cadastradas durante o cadastro de produtos. (E)  
+      
+  - **RF09.2.2.2 \- Edição de categoria:** o sistema deve permitir a edição de categorias. (E)  
+      
+    - **RF09.2.2.2.1 \- Restrição de edição de categoria:** o sistema deve permitir somente o Administrador editar categorias. (O)
 
-  - **RF09.2.2.1 - Exibir Categorias durante cadastro de Produto:** o sistema deve exibir as categorias cadastradas durante o cadastro de produtos. (E)
+    
 
-  - **RF09.2.2.2 - Edição de categoria:** o sistema deve permitir a edição de categorias. (E)
+  - **RF09.2.2.3 \- Exclusão de categoria:** o sistema deve permitir a exclusão de categorias. (E)  
+      
+    - **RF09.2.2.3.1 \- Restrição de exclusão de categoria:** o sistema deve permitir somente o Administrador excluir categorias. (O)
 
-    - **RF09.2.2.2.1 - Restrição de edição de categoria:** o sistema deve permitir somente o Administrador editar categorias. (O)
 
-  - **RF09.2.2.3 - Exclusão de categoria:** o sistema deve permitir a exclusão de categorias. (E)
-
-    - **RF09.2.2.3.1 - Restrição de exclusão de categoria:** o sistema deve permitir somente o Administrador excluir categorias. (O)
-
-- **RF09.3 - Restrição de cadastro de produto:** o sistema deve permitir somente o Administrador e Estoquista cadastrar produtos no catálogo. (O)
+- **RF09.3 \- Restrição de cadastro de produtos:** o sistema deve permitir somente o Administrador e Estoquista cadastrar produtos no catálogo. (O)
 
 **RF10 – Editar produto:** o sistema deve permitir editar as informações de um produto já cadastrado. (E)
 
-- **RF10.1 - Restrição de edição de produto:** o sistema deve permitir somente o Administrador e Estoquista editar produtos do catálogo. (O)
-
-- **RF10.2 - Informações passíveis de edição:** o sistema deve permitir a edição das seguintes informações do produto: (E)
-  - Nome do produto;
-  - Preço do produto;
-  - Código do produto;
-  - Unidade de medida;
-  - Categoria;
+- **RF10.1 \- Restrição de edição de produto:** o sistema deve permitir somente o Administrador e Estoquista editar produtos do catálogo. (O)  
+    
+- **RF10.2 \- Informações passíveis de edição:** o sistema deve permitir a edição das seguintes informações do produto: (E)  
+    
+  - Nome do produto;  
+  - Preço do produto;  
+  - Código do produto;  
+  - Unidade de medida;  
+  - Categoria;  
   - Quantidade mínima de estoque;
 
 **RF11 – Excluir produto:** o sistema deve permitir excluir o cadastro de um produto. (E)
 
-- **RF11.1 - Restrição de exclusão de produto:** o sistema deve permitir somente o Administrador e Estoquista excluir produtos do catálogo. (O)
-
-- **RF11.2 - Impedir exclusão de produto com estoque:** o sistema deve impedir a exclusão de um produto caso haja estoque disponível. (E)
-
-- **RF11.3 - Exigir confirmação de exclusão:** o sistema deve exigir confirmação explícita antes de concluir a operação.
-
-- **RF11.4 - Remoção completa do produto:** o sistema deve remover todos os dados vinculados ao produto. (E)
+- **RF11.1 \- Restrição de exclusão de produto:** o sistema deve permitir somente o Administrador e Estoquista excluir produtos do catálogo. (O)  
+    
+- **RF11.2 \- Impedir exclusão de produto com estoque:** o sistema deve impedir a exclusão de um produto caso haja estoque disponível. (E)  
+    
+- **RF11.3 \- Exigir confirmação de exclusão:** o sistema deve exigir confirmação explícita antes de concluir a operação.  
+    
+- **RF11.4 \- Remoção completa do produto:** o sistema deve remover todos os dados vinculados ao produto. (E)
 
 **RF12 – Listar produtos:** o sistema deve exibir todos os produtos cadastrados com suas informações básicas em formato de tabela. (E)
 
 - **RF12.1 Listagem automática:** o sistema deve listar automaticamente ao entrar na aba de catálogo. (E)
 
-**RF13 – Buscar produto:** o sistema deve permitir buscar produtos por meio do nome. (E)
+**RF13 – Buscar produtos:** o sistema deve permitir buscar produtos por meio do nome. (E)
 
-- **RF13.1 - Exibir informações do produto:** o sistema deve permitir exibir as informações do produto, caso encontrado. (E)
+- **RF13.1 \- Exibir informações do produto:** o sistema deve permitir exibir as informações do produto, caso encontrado. (E)
 
-**RF14 - Listar produtos com baixa quantidade**: o sistema deve exibir todos os produtos em que a quantidade é menor que a quantidade mínima. (E)
+**RF14 \- Listar produtos com baixa quantidade**: o sistema deve exibir todos os produtos em que a quantidade é menor que a quantidade mínima. (E)
 
-**RF15 - Diminuir quantidade dos produtos por meio da venda**: o sistema deve diminuir a quantidade dos produtos vendidos automaticamente. (O)
+**RF15 \- Diminuir quantidade dos produtos por meio da venda**: o sistema deve diminuir a quantidade dos produtos vendidos automaticamente. (O)
 
 #### 3.1.4 Gestão de Finanças
 
 **RF16 – Gerar relatório de despesas:** o sistema deve gerar relatório de despesas exibindo o total gasto com representação gráfica. (E)
 
-- **RF16.1 – Filtrar relatório de despesas por período:** o sistema deve gerar gráfico de linha, possibilitando definir intervalo de datas para o relatório, exibindo apenas lançamentos dentro do período informado. (E)
-
-- **RF16.2 – Filtrar relatório de despesas por categoria:** o sistema deve gerar gráfico de pizza, permitindo selecionar uma ou mais categorias para filtrar o relatório de despesas, exibindo apenas os lançamentos das categorias selecionadas. (E)
-
-- **RF16.3 - Restrição de geração de relatório:** somente o Administrador e Vendedor podem gerar relatórios de despesa. (O)
+- **RF16.1 – Filtrar relatório de despesas por período:** o sistema deve gerar gráfico de linha, possibilitando definir intervalo de datas para o relatório, exibindo apenas lançamentos dentro do período informado. (E)  
+    
+- **RF16.2 – Filtrar relatório de despesas por categoria:** o sistema deve gerar gráfico de pizza, permitindo selecionar uma ou mais categorias para filtrar o relatório de despesas, exibindo apenas os lançamentos das categorias selecionadas. (E)  
+    
+- **RF16.3 \- Restrição de geração de relatório:** somente o Administrador e Vendedor podem gerar relatórios de despesa. (O)
 
 **RF17 – Gerar relatório de receitas:** o sistema deve gerar relatório de receitas exibindo o total recebido com representação gráfica. (E)
 
-- **RF17.1 – Filtrar relatório de receitas por período:** o sistema deve gerar gráfico de linha, possibilitando definir intervalo de datas para o relatório, exibindo apenas lançamentos dentro do período informado. (E)
-
-- **RF17.2 – Filtrar relatório de receitas por categoria:**o sistema deve gerar gráfico de pizza, permitindo selecionar uma ou mais categorias para filtrar o relatório de receitas, exibindo apenas os lançamentos das categorias selecionadas. (E)
-
-- **RF17.3 - Restrição de geração de relatório:** somente o Administrador e Vendedor podem gerar relatórios de receita. (O)
+- **RF17.1 – Filtrar relatório de receitas por período:** o sistema deve gerar gráfico de linha, possibilitando definir intervalo de datas para o relatório, exibindo apenas lançamentos dentro do período informado. (E)  
+    
+- **RF17.2 – Filtrar relatório de receitas por categoria:** o sistema deve gerar gráfico de pizza, permitindo selecionar uma ou mais categorias para filtrar o relatório de receitas, exibindo apenas os lançamentos das categorias selecionadas. (E)  
+    
+- **RF17.3 \- Restrição de geração de relatório:** somente o Administrador e Vendedor podem gerar relatórios de receita. (O)
 
 **RF18 – Gerar relatório financeiro geral:** o sistema deve gerar relatório consolidado com total de receitas, total de despesas, saldo resultante e representação gráfica da evolução do saldo ao longo de um período. (E)
 
-- **RF18.1 – Filtrar relatório financeiro por período:** o sistema deve gerar gráfico de linha, possibilitando definir intervalo de datas, calculando receitas, despesas e saldo apenas dentro do período selecionado. (E)
-
-- **RF18.2 - Restrição de geração de relatório:** somente o Administrador e Vendedor podem gerar relatórios de finanças. (O)
+- **RF18.1 – Filtrar relatório financeiro por período:** o sistema deve gerar gráfico de linha, possibilitando definir intervalo de datas, calculando receitas, despesas e saldo apenas dentro do período selecionado. (E)  
+    
+- **RF18.2 \- Restrição de geração de relatório:** somente o Administrador e Vendedor podem gerar relatórios de finanças. (O)
 
 **RF19 – Calcular saldo financeiro:** o sistema deve calcular automaticamente o saldo financeiro após cada operação que envolva receita ou despesa, sem necessidade de intervenção do usuário. (O)
 
@@ -325,84 +324,90 @@ RG05 - O acesso ao sistema deve restrito a usuários autenticados por meio de lo
 
 **RF20 – Registrar compra:** o sistema deve permitir registrar compras de produtos. (E)
 
-- **RF20.1 – Selecionar produto(s):** o sistema deve exigir a seleção do produto(s) do catálogo. (E)
-
-- **RF20.2 – Validar dados da compra:** o sistema deve validar as informações dos registros de compra. (O)
-
-  - **RF20.2.1 – Erro no registro de compra:** o sistema deve exibir uma mensagem de erro em caso de inconsistência no registro de compra. (E)
-
-  - **RF20.2.2 - Contas pendentes:** o sistema deve persistir todas as contas a serem pagas. As informações referentes a cada conta persistida são: (E)
-
-    - Data;
-    - Valor;
+- **RF20.1 – Selecionar produto(s):** o sistema deve exigir a seleção do produto(s) do catálogo. (E)  
+    
+- **RF20.2 – Validar dados da compra:** o sistema deve validar as informações dos registros de compra. (O)  
+    
+  - **RF20.2.1 – Erro no registro de compra:** o sistema deve exibir uma mensagem de erro em caso de inconsistência no registro de compra. (E)  
+      
+  - **RF20.2.2 \- Contas pendentes:** o sistema deve persistir todas as contas a serem pagas. As informações referentes a cada conta persistida são: (E)  
+      
+    - Data;  
+    - Valor;  
     - Status de pagamento da conta;
 
-  - **RF20.2.3 - Pagamento de conta:** quando a conta for paga, o status dela deve ser alterado para “paga”. Além disso, o saldo deve ser recalculado. (E)
+    
 
-  - **RF20.2.4 - Listar contas:** o sistema deve permitir a visualização de todas as contas registradas com suas informações básicas em formato de tabela. (E)
+  - **RF20.2.3 \- Pagamento de conta:** quando a conta for paga, o status dela deve ser alterado para “paga”. Além disso, o saldo deve ser recalculado. (E)  
+      
+  - **RF20.2.4 \- Listar contas:** o sistema deve permitir a visualização de todas as contas registradas com suas informações básicas em formato de tabela. (E)  
+      
+    - **RF20.2.4.1 \- Listagem automática:** o sistema deve listar automaticamente ao entrar na aba de contas. (E)  
+    - **RF20.2.4.2 \- Filtro por status de conta:** o sistema deve permitir filtrar a listagem por contas pagas e não pagas. (E)
 
-    - **RF20.2.4.1 - Listagem automática:** o sistema deve listar automaticamente ao entrar na aba de contas. (E)
-    - **RF20.2.4.2 - Filtro por status de conta:** o sistema deve permitir filtrar a listagem por contas pagas e não pagas. (E)
 
-- **RF20.3 – Informações de compra:** o sistema deve conter as seguintes informações da compra: (E)
-
-  - Nome dos produtos comprados;
-  - Código de cada produto comprado;
-  - Quantidade de cada produto comprado;
-  - Preço total.
+- **RF20.3 – Informações de compra:** o sistema deve conter as seguintes informações da compra: (E)  
+    
+  - Nome dos produtos comprados;  
+  - Código de cada produto comprado;  
+  - Quantidade de cada produto comprado;  
+  - Preço total.  
   - Data da compra;
 
-- **RF20.4 – Recalcular saldo após registro de compra:** o sistema deve recalcular automaticamente o saldo ao registrar uma compra. (O)
 
-- **RF20.5 - Aumento da quantidade de produtos:** o sistema deve aumentar a quantidade dos produtos que forem comprados, realizando uma edição automática do produto. (O)
-
-- **RF20.6 - Restrição de registro de compra:** o sistema deve permitir somente o Administrador e Vendedor registrarem compras de produtos. (O)
+- **RF20.4 – Recalcular saldo após registro de compra:** o sistema deve recalcular automaticamente o saldo ao registrar uma compra. (O)  
+    
+- **RF20.5 \- Aumento da quantidade de produtos:** o sistema deve aumentar a quantidade dos produtos que forem comprados, realizando uma edição automática do produto. (O)  
+    
+- **RF20.6 \- Restrição de registro de compra:** o sistema deve permitir somente o Administrador e Vendedor registrarem compras de produtos. (O)
 
 **RF21 – Listar compras:** o sistema deve permitir a visualização de todas as compras registradas com suas informações básicas em formato de tabela. (E)
 
-- **RF21.1 – Filtrar compras por período:** o sistema deve permitir filtrar as compras de acordo com o período informado pelo usuário. (E)
-
-- **RF21.2 – Filtrar compras por produto:** o sistema deve permitir filtrar as compras de acordo com o produto comprado. (E)
-
+- **RF21.1 – Filtrar compras por período:** o sistema deve permitir filtrar as compras de acordo com o período informado pelo usuário. (E)  
+    
+- **RF21.2 – Filtrar compras por produto:** o sistema deve permitir filtrar as compras de acordo com o produto comprado. (E)  
+    
 - **RF21.3 Listagem automática:** o sistema deve listar automaticamente ao entrar na aba de compras. (E)
 
 #### 3.1.6 Gestão de Vendas de Produtos
 
 **RF22 – Registrar venda:** o sistema deve permitir registrar vendas de produtos. (E)
 
-- **RF22.1 – Selecionar produto(s):** o sistema deve exigir a seleção de um ou mais produtos do catálogo. (E)
+- **RF22.1 – Selecionar produto(s):** o sistema deve exigir a seleção de um ou mais produtos do catálogo. (E)  
+    
+- **RF22.2 – Validar dados da venda:** o sistema deve validar as informações dos registros de venda. (O)  
+    
+  - **RF22.2.1 – Erro no registro de venda:** o sistema deve exibir uma mensagem de erro em caso de inconsistência no registro de venda. (E)  
+      
+  - **RF22.2.2 \- Quantidade insuficiente de produto:** caso o sistema identifique que não há a quantidade desejada de determinado produto no estoque, uma mensagem deve ser exibida indicando que não é possível realizar a venda. (E)
 
-- **RF22.2 – Validar dados da venda:** o sistema deve validar as informações dos registros de venda. (O)
 
-  - **RF22.2.1 – Erro no registro de venda:** o sistema deve exibir uma mensagem de erro em caso de inconsistência no registro de venda. (E)
-
-  - **RF22.2.2 - Quantidade insuficiente de produto:** caso o sistema identifique que não há a quantidade desejada de determinado produto no estoque, uma mensagem deve ser exibida indicando que não é possível realizar a venda. (E)
-
-- **RF22.3 – Informações de venda:** o sistema deve conter as seguintes informações da venda: (E)
-
-  - Nome dos produtos vendidos;
-  - Código de cada produto vendido;
-  - Quantidade de cada produto vendido;
+- **RF22.3 – Informações de venda:** o sistema deve conter as seguintes informações da venda: (E)  
+    
+  - Nome dos produtos vendidos;  
+  - Código de cada produto vendido;  
+  - Quantidade de cada produto vendido;  
   - Preço total;
 
-- **RF22.3.1 – Cálculo do preço total:** o sistema deve calcular automaticamente o preço total da venda usando os preços unitários de cada produto vendido. (O)
 
-- **RF22.4 – Recalcular saldo após registro de venda:** o sistema deve recalcular automaticamente o saldo ao registrar uma venda. (O)
-
-- **RF22.5 - Diminuição da quantidade de produtos:** o sistema deve diminuir a quantidade dos produtos que forem vendidos, realizando uma edição automática do produto. (O)
-
-- **RF22.6 - Restrição de registro de venda:** o sistema deve permitir somente o Administrador e Vendedor registrarem vendas. (O)
-
-- **RF22.7 - Exibição de informações de venda:** o sistema deve mostrar os produtos da venda, a quantidade de cada produto, o valor do sub-total de cada produto e o valor final antes da confirmação da venda. (E)
-
-- **RF22.8 - Confirmação de venda:** o sistema deve mostrar uma aba para confirmação de venda. (E)
+- **RF22.3.1 – Cálculo do preço total:** o sistema deve calcular automaticamente o preço total da venda usando os preços unitários de cada produto vendido. (O)  
+    
+- **RF22.4 – Recalcular saldo após registro de venda:** o sistema deve recalcular automaticamente o saldo ao registrar uma venda. (O)  
+    
+- **RF22.5 \- Diminuição da quantidade de produtos:** o sistema deve diminuir a quantidade dos produtos que forem vendidos, realizando uma edição automática do produto. (O)  
+    
+- **RF22.6 \- Restrição de registro de venda:** o sistema deve permitir somente o Administrador e Vendedor registrarem vendas. (O)  
+    
+- **RF22.7 \- Exibição de informações de venda:** o sistema deve mostrar os produtos da venda, a quantidade de cada produto, o valor do subtotal de cada produto e o valor final antes da confirmação da venda. (E)  
+    
+- **RF22.8 \- Confirmação de venda:** o sistema deve mostrar uma aba para confirmação de venda. (E)
 
 **RF23 – Listar vendas:** o sistema deve permitir a visualização de todas as vendas registradas com suas informações básicas em formato de tabela. (E)
 
-- **RF23.1 – Filtrar vendas por período:** o sistema deve permitir filtrar as vendas de acordo com o período informado pelo usuário. (E)
-
-- **RF23.2 – Filtrar vendas por produto:** o sistema deve permitir filtrar as vendas de acordo com o produto comprado. (E)
-
+- **RF23.1 – Filtrar vendas por período:** o sistema deve permitir filtrar as vendas de acordo com o período informado pelo usuário. (E)  
+    
+- **RF23.2 – Filtrar vendas por produto:** o sistema deve permitir filtrar as vendas de acordo com o produto comprado. (E)  
+    
 - **RF23.3 Listagem automática:** o sistema deve listar automaticamente ao entrar na aba de vendas. (E)
 
 ### 3.2 Requisitos Não Funcionais
@@ -451,14 +456,14 @@ Esta subseção descreve os requisitos relacionados à estrutura visual, navega�
 
 **RI01 – Formulários de cadastro e edição:** o sistema deve apresentar formulários organizados para todas as operações de cadastro e edição, controles de ação distintos para confirmar ou cancelar a operação. (E)
 
-- **RI01.1 – Exibir mensagens de validação inline:** o sistema deve exibir mensagens de erro de validação ao lado ou abaixo do campo que originou o problema, sem redirecionar o usuário para outra tela. (E)
-
+- **RI01.1 – Exibir mensagens de validação inline:** o sistema deve exibir mensagens de erro de validação ao lado ou abaixo do campo que originou o problema, sem redirecionar o usuário para outra tela. (E)  
+    
 - **RI01.2 – Preservar dados preenchidos após erro de validação:** o sistema deve manter os dados que já foram preenchidos e informar somente qual campo está incorreto. (E)
 
 **RI02 – Telas de listagem:** o sistema deve apresentar os registros cadastrados em formato tabular, contendo colunas com as informações principais de cada item. (E)
 
-- **RI02.1 – Exibir campo de busca nas listagens:** o sistema deve disponibilizar, em todas as telas de listagem, um campo de busca que permita localizar registros específicos. (E)
-
+- **RI02.1 – Exibir campo de busca nas listagens:** o sistema deve disponibilizar, em todas as telas de listagem, um campo de busca que permita localizar registros específicos. (E)  
+    
 - **RI02.2 – Exibir mensagem de lista vazia:** quando não houver registros, o sistema deve apresentar uma mensagem indicando a ausência de dados. (E)
 
 **RI03 – Diálogos de confirmação:** o sistema deve apresentar janelas de confirmação antes de executar operações irreversíveis. (E)
@@ -507,16 +512,16 @@ Esta subseção descreve os requisitos relacionados aos mecanismos de troca de d
 
 **RI15 – Ausência de protocolos de comunicação em rede:** o sistema não depende de protocolos de comunicação em rede. (O)
 
-## 4. Apêndices
+## 4\. Apêndices
 
 Esta seção reúne materiais complementares ao documento principal, oferecendo informações de apoio que auxiliam na compreensão do sistema, de suas regras de negócio e da organização dos requisitos descritos nas seções anteriores.
 
-### 4.1 Apêndice A - Hierarquia de Perfis de Acesso
+### 4.1 Apêndice A \- Hierarquia de Perfis de Acesso
 
 O sistema adota um modelo de controle de acesso baseado em perfis hierárquicos. O quadro a seguir sintetiza os módulos acessíveis a cada perfil, servindo como referência consolidada para os requisitos de restrição distribuídos ao longo da seção 3.1.
 
 | Funcionalidade | ADM | EST | VEND |
-| --- | --- | --- | --- |
+| :---- | :---- | :---- | :---- |
 | Autenticação e Sessão | sim | sim | sim |
 | Criação e Exclusão de Usuários | sim | não | não |
 | Edição de Usuário | sim | sim | sim |
@@ -538,20 +543,20 @@ Este apêndice apresenta as principais fórmulas utilizadas pelo Sistema de Recu
 
 O subtotal de cada produto refere-se ao valor de um certo produto baseado na quantidade.
 
-> Subtotal_item = Quantidade × Preço Unitário
+> Subtotal\_item \= Quantidade × Preço Unitário
 
 | Produto | Quantidade | Preço unitário | Subtotal |
-| --- | --- | --- | --- |
+| :---- | :---- | :---- | :---- |
 | Produto A | 3 | R$ 20,00 | R$ 60,00 |
 | Produto B | 2 | R$ 15,00 | R$ 30,00 |
 
 #### 4.2.1.2 Valor total da venda
 
-> Total da Venda = ∑ Subtotal_item
+> Total da Venda \= ∑ Subtotal\_item
 
 Exemplo de valor do produto A e B, seguindo a tabela acima:
 
-> 60,00 R$ + 30,00 R$ = R$90,00
+> 60,00 R$ \+ 30,00 R$ \= R$90,00
 
 ### 4.2.2 Cálculos de Estoque
 
@@ -559,13 +564,13 @@ Exemplo de valor do produto A e B, seguindo a tabela acima:
 
 O estoque atual representa a quantidade disponível em unidades de certo produto no momento atual.
 
-> Estoque_Atual = Estoque_Inicial + Entradas − Saídas
+> Estoque\_Atual \= Estoque\_Inicial \+ Entradas − Saídas
 
 #### 4.2.2.2 Verificação de estoque mínimo
 
 O estoque mínimo é o valor em unidades de certo produto para que ele seja classificado como estoque baixo. Isso ocorre quando o estoque atual é menor ou igual ao estoque mínimo definido.
 
-> Estoque_Atual ≤ Estoque_Mínimo
+> Estoque\_Atual ≤ Estoque\_Mínimo
 
 ### 4.2.3 Cálculos Financeiros
 
@@ -573,20 +578,20 @@ O estoque mínimo é o valor em unidades de certo produto para que ele seja clas
 
 O Saldo Financeiro Atual representa o valor real da disponibilidade de caixa. Nesse saldo, são consideradas apenas as despesas que já foram pagas.
 
-> Saldo = Total de Receitas − Total de Despesas Pagas
+> Saldo \= Total de Receitas − Total de Despesas Pagas
 
 #### 4.2.3.2 Saldo Financeiro Projetado
 
 O Saldo Financeiro Projetado representa a estimativa da disponibilidade de caixa. Ele é calculado por meio da diferença entre as receitas totais e as receitas pagas e ainda não pagas.
 
-> Saldo = Total de Receitas − (Total de Despesas Pagas + Total de Despesas Não Pagas)
+> Saldo \= Total de Receitas − (Total de Despesas Pagas \+ Total de Despesas Não Pagas)
 
-## 5. Índice
+## 5\. Índice
 
 ### 5.1 Sumário
 
 | Seção | Página |
-| --- | --- |
+| :---- | :---- |
 | 1\. Introdução | 1 |
 | 1.1 Propósito do Documento de Requisitos | 1 |
 | 1.2 Escopo do Produto | 1 |
@@ -633,7 +638,7 @@ O Saldo Financeiro Projetado representa a estimativa da disponibilidade de caixa
 ### 5.2 Índice de Termos
 
 | Termo | Página |
-| --- | --- |
+| :---- | :---- |
 | Administrador | 3 |
 | Autenticação | 1 |
 | Catálogo | 1 |
