@@ -57,6 +57,8 @@ As principais definições, abreviações e acrônimos utilizados neste document
 
 ### 1.4 Referências
 
+Não usamos referências.
+
 ### 1.5 Visão do restante do Documento
 
 Esse documento está organizado em seções, cada uma responsável por descrever partes específicas do sistema proposto. São elas:
@@ -585,76 +587,75 @@ O Saldo Financeiro Projetado representa a estimativa da disponibilidade de caixa
 
 | Seção | Página |
 | --- | --- |
-| 1\. Introdução |  |
-| 1.1 Propósito do Documento de Requisitos |  |
-| 1.2 Escopo do Produto |  |
-| 1.3 Definições, Acrônimos e Abreviações |  |
-| 1.4 Referências |  |
-| 1.5 Visão do Restante do Documento |  |
-| 2\. Descrição Geral |  |
-| 2.1 Perspectiva do Produto |  |
-| 2.2 Funcionalidade do Produto |  |
-| 2.2.1 Módulo de Estoque |  |
-| 2.2.2 Módulo de Vendas |  |
-| 2.2.3 Módulo Financeiro |  |
-| 2.3 Características do Usuário |  |
-| 2.4 Restrições Gerais |  |
-| 2.5 Suposições e Dependências |  |
-| 2.5.1 Suposições |  |
-| 2.5.2 Dependências |  |
-| 3\. Requisitos Específicos |  |
-| 3.1 Requisitos Funcionais |  |
-| 3.1.1 Autenticação |  |
-| 3.1.2 Gestão de Usuários |  |
-| 3.1.3 Gestão de Estoque |  |
-| 3.1.4 Gestão de Finanças |  |
-| 3.1.5 Gestão de Compras de Produtos |  |
-| 3.1.6 Gestão de Vendas de Produtos |  |
-| 3.2 Requisitos Não Funcionais |  |
-| 3.2.1 Desempenho |  |
-| 3.2.2 Usabilidade |  |
-| 3.2.3 Confiabilidade |  |
-| 3.2.4 Portabilidade |  |
-| 3.3 Requisitos de Interface |  |
-| 3.3.1 Interface de Usuário |  |
-| 3.3.2 Interface com Hardware |  |
-| 3.3.3 Interface com Software Externo |  |
-| 3.3.4 Interface de Comunicação |  |
-| 4\. Apêndices |  |
-| 4.1 Apêndice A – Hierarquia de Perfis de Acesso |  |
-| 4.2 Apêndice B – Regras de Cálculo |  |
-| 4.2.1 Cálculos de Vendas |  |
-| 4.2.2 Cálculos de Estoque |  |
-| 4.2.3 Cálculos Financeiros |  |
-| 5\. Índice |  |
+| 1\. Introdução | 1 |
+| 1.1 Propósito do Documento de Requisitos | 1 |
+| 1.2 Escopo do Produto | 1 |
+| 1.3 Definições, Acrônimos e Abreviações | 1 |
+| 1.4 Referências | 3 |
+| 1.5 Visão do Restante do Documento | 3 |
+| 2\. Descrição Geral | 4 |
+| 2.1 Perspectiva do Produto | 4 |
+| 2.2 Funcionalidade do Produto | 4 |
+| 2.2.1 Módulo de Estoque | 4 |
+| 2.2.2 Módulo de Vendas | 5 |
+| 2.2.3 Módulo Financeiro | 5 |
+| 2.3 Características do Usuário | 5 |
+| 2.4 Restrições Gerais | 6 |
+| 2.5 Suposições e Dependências | 6 |
+| 2.5.1 Suposições | 6 |
+| 2.5.2 Dependências | 6 |
+| 3\. Requisitos Específicos | 7 |
+| 3.1 Requisitos Funcionais | 7 |
+| 3.1.1 Autenticação | 7 |
+| 3.1.2 Gestão de Usuários | 7 |
+| 3.1.3 Gestão de Estoque | 8 |
+| 3.1.4 Gestão de Finanças | 11 |
+| 3.1.5 Gestão de Compras de Produtos | 12 |
+| 3.1.6 Gestão de Vendas de Produtos | 13 |
+| 3.2 Requisitos Não Funcionais | 15 |
+| 3.2.1 Desempenho | 15 |
+| 3.2.2 Usabilidade | 15 |
+| 3.2.3 Confiabilidade | 15 |
+| 3.2.4 Portabilidade | 16 |
+| 3.3 Requisitos de Interface | 16 |
+| 3.3.1 Interface de Usuário | 16 |
+| 3.3.2 Interface com Hardware | 17 |
+| 3.3.3 Interface com Software Externo | 18 |
+| 3.3.4 Interface de Comunicação | 18 |
+| 4\. Apêndices | 18 |
+| 4.1 Apêndice A – Hierarquia de Perfis de Acesso | 18 |
+| 4.2 Apêndice B – Regras de Cálculo | 19 |
+| 4.2.1 Cálculos de Vendas | 19 |
+| 4.2.2 Cálculos de Estoque | 20 |
+| 4.2.3 Cálculos Financeiros | 20 |
+| 5\. Índice | 21 |
 
 ### 5.2 Índice de Termos
 
 | Termo | Página |
 | --- | --- |
-| Administrador |  |
-| Autenticação |  |
-| Catálogo |  |
-| Categoria |  |
-| Compra |  |
-| Conta a pagar |  |
-| CRUD |  |
-| Despesa |  |
-| Estoque |  |
-| Estoque mínimo |  |
-| Estoquista |  |
-| Login |  |
-| Logout |  |
-| Módulo |  |
-| Movimentação financeira |  |
-| Perfil de acesso |  |
-| Produto |  |
-| Receita |  |
-| Relatório financeiro |  |
-| Saldo |  |
-| Senha |  |
-| Sessão |  |
-| Unidade de medida |  |
-| Usuário |  |
-| Venda |  |
-| Vendedor |  |
+| Administrador | 3 |
+| Autenticação | 1 |
+| Catálogo | 1 |
+| Categoria | 2 |
+| Compra | 1 |
+| Conta | 6 |
+| CRUD | 3 |
+| Despesa | 2 |
+| Estoque | 1 |
+| Estoque mínimo | 2 |
+| Estoquista | 3 |
+| Login | 2 |
+| Logout | 2 |
+| Módulo | 3 |
+| Movimentação financeira | 3 |
+| Produto | 1 |
+| Receita | 2 |
+| Relatório financeiro | 5 |
+| Saldo | 2 |
+| Senha | 5 |
+| Sessão | 2 |
+| Unidade de medida | 9 |
+| Usuário | 1 |
+| Venda | 1 |
+| Vendedor | 3 |
